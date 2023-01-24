@@ -3,11 +3,27 @@ body {
 }
 
 button {
-    padding: 0.5em;
-
-    background-color: white;
     border: 0;
     border-radius: 2em;
+    font-size: smaller;
+}
+
+button.btn-small {
+    padding: 0.7em;
+}
+
+button.btn-big {
+    padding: 1em;
+}
+
+button.btn-white {
+    background-color: white;
+    color: black;
+}
+
+button.btn-black {
+    background-color: black;
+    color: white;
 }
 
 body .container-centered {
@@ -17,12 +33,14 @@ body .container-centered {
 }
 
 /* header */
+header {
+    color: white;
+}
 /* nav */
 nav {
-    padding: 0.5em 0;
-    background-color: #404eed;
-    font-size: small;
-    color: white;
+    padding: 1em 0;
+    background-color: #265ee8;
+    font-size: smaller;
 }
 
 #nav-inner {
@@ -33,12 +51,7 @@ nav {
 }
 
 #logo-header {
-    /* width: 100px;
-    height: 50px; */
-    /* debug */
-    /* background-image: url(../img/logo.svg);
-    background-size: contain;
-    background-repeat: no-repeat; */
+    
 }
 
 #links-header ul {
@@ -55,20 +68,25 @@ nav {
 /* /nav */
 
 /* hero-container */
+#hero-container-wrapper {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+}
+
 #hero-container {
     min-height: 400px;
-    background-color: violet;
     /* debug */
     padding: 40px 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
 
 #hero-container-inner {
-    background-color: blue;
-    /* debug */
     max-width: 600px;
 
     display: flex;
@@ -78,8 +96,11 @@ nav {
     gap: 20px;
 }
 
-#hero-container-inner h1 {
-    margin-bottom: 0.6em;
+#hero-container-inner .buttons-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
 }
 /* /hero-container */
 /* /header */
