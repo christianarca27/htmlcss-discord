@@ -81,7 +81,6 @@ nav {
 
 #hero-container {
     min-height: 400px;
-    /* debug */
     padding: 40px 0;
 
     display: flex;
@@ -131,7 +130,6 @@ main section .section-inner .section-text h2 {
 
 main section:nth-of-type(even) {
     background-color: #f6f6f6;
-    /* debug */
 }
 
 main section:nth-of-type(even) .section-inner {
@@ -179,10 +177,19 @@ main section:last-of-type .section-inner > h2 {
 
 /* footer */
 /* footer-top */
+footer {
+    padding: 4em;
+    background-color: #23272A;
+    color: white;
+    font-size: smaller;
+}
+
+footer strong {
+    color: #7289da;
+}
+
 #footer-top {
-    background-color: violet;
-    /* debug */
-    padding: 2em 0;
+    margin-bottom: 2em;
     display: flex;
     flex-flow: row nowrap;
     gap: 20px;
@@ -190,76 +197,72 @@ main section:last-of-type .section-inner > h2 {
 
 /* footer-top-left */
 #footer-top-left {
-    background-color: blue;
-    /* debug */
-    width: 200px;
-    height: 200px;
-    /* debug */
+    max-width: 20%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
 }
 
-#social {
-    background-color: red;
-    /* debug */
-    width: 200px;
-    height: 100px;
+#footer-top-left strong {
+    font-size: 20px;
+}
+
+#footer-top-left #lang {
+    font-size: smaller;
+}
+
+#footer-top-left #lang img {
+    height: 1em;
+}
+
+#footer-top-left #icons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
 }
 /* /footer-top-left */
 
 /* footer-top-right */
 #footer-top-right {
-    background-color: blue;
-    /* debug */
     flex-grow: 1;
 
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
 }
 
 #footer-top-right .link-list {
     flex-grow: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
 }
 
-#footer-top-right ul {
+#footer-top-right .link-list ul {
     list-style: none;
     padding-inline-start: 0;
-}
 
-#footer-top-right ul li {
-    background-color: green;
-    /* debug */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
 }
-/* /footer-top-right */
-/* /footer-top */
 
 footer hr {
-    border: 5px solid red;
-    /* debug */
+    margin-bottom: 2em;
+    border: 1px solid #7289da;
 }
 
 /* footer-bottom */
 #footer-bottom {
-    background-color: green;
-    /* debug */
-    padding: 2em 0;
-    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 #logo-footer-bottom {
-    width: 60px;
-    height: 30px;
-    background-color: red;
-    /* debug */
 }
 
 #singin-footer-bottom {
-    width: 60px;
-    height: 30px;
-    background-color: red;
-    /* debug */
 }
 /* /footer-bottom */
 /* /footer */
